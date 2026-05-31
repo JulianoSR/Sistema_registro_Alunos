@@ -53,7 +53,6 @@ while inicio_programa == "S":
         "INSERT INTO aluno (nome_aluno, qtd_semestre) VALUES (%s, %s)",
         (nome_aluno, len(notas_aluno))
     )
-    print("INSERT aluno executado!")
     id_aluno = cursor.lastrowid
     for semestre, nota in enumerate(notas_aluno, 1):
         cursor.execute(
