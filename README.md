@@ -96,3 +96,10 @@ DATABASE=registro_aluno
 ```bash
 python ProjetoPortfólio.py
 ```
+## 🤖 Utilização de IA
+
+Durante o desenvolvimento deste projeto, foi utilizada IA como ferramenta de apoio ao aprendizado. 
+Com base no conhecimento prévio em Python, MySQL e Excel, a IA auxiliou na conexão entre as 
+ferramentas, na identificação e correção de erros e na otimização do código — tornando-o mais 
+limpo e estruturado. O foco foi sempre entender cada etapa antes de avançar, usando a IA como 
+guia e não como substituto do aprendizado.
