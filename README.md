@@ -87,6 +87,11 @@ CREATE TABLE nota (
 ### 4. Configure o arquivo .env
 Crie um arquivo `.env` na pasta do projeto com suas credenciais:
 
+HOST=127.0.0.1
+USER=root
+PASSWORD=sua_senha
+DATABASE=registro_aluno
+
 ### 5. Execute o programa
 ```bash
 python ProjetoPortfólio.py
