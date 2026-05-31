@@ -43,3 +43,63 @@ não sendo expostas no código-fonte.
 - Proteção de credenciais com `python-dotenv`
 - Uso de laços de repetição, funções e dicionários em Python
 - Consultas SQL com `JOIN` entre tabelas relacionadas
+
+## 🚀 Como Rodar o Projeto
+
+### Pré-requisitos
+- Python 3 instalado
+- MySQL instalado
+- VS Code ou outro editor que execute Python
+
+### 1. Clone o repositório
+```bash
+git clone https://github.com/JulianoSR/Sistema_registro_Alunos.git
+```
+
+### 2. Instale as bibliotecas
+```bash
+pip install mysql-connector-python
+pip install openpyxl
+pip install python-dotenv
+```
+
+### 3. Configure o banco de dados
+No MySQL, execute:
+```sql
+CREATE DATABASE registro_aluno;
+USE registro_aluno;
+
+CREATE TABLE aluno (
+    id_aluno INT PRIMARY KEY AUTO_INCREMENT,
+    nome_aluno VARCHAR(100) NOT NULL,
+    qtd_semestre INT NOT NULL
+);
+
+CREATE TABLE nota (
+    id_nota INT PRIMARY KEY AUTO_INCREMENT,
+    id_aluno INT,
+    FOREIGN KEY(id_aluno) REFERENCES aluno(id_aluno),
+    semestre INT NOT NULL,
+    nota FLOAT NOT NULL
+);
+```
+
+### 4. Configure o arquivo .env
+Crie um arquivo `.env` na pasta do projeto com suas credenciais:
+
+HOST=127.0.0.1
+USER=root
+PASSWORD=sua_senha
+DATABASE=registro_aluno
+
+### 5. Execute o programa
+```bash
+python ProjetoPortfólio.py
+```
+## 🤖 Utilização de IA
+
+Durante o desenvolvimento deste projeto, foi utilizada IA como ferramenta de apoio ao aprendizado. 
+Com base no conhecimento prévio em Python, MySQL e Excel, a IA auxiliou na conexão entre as 
+ferramentas, na identificação e correção de erros e na otimização do código — tornando-o mais 
+limpo e estruturado. O foco foi sempre entender cada etapa antes de avançar, usando a IA como 
+guia e não como substituto do aprendizado.
